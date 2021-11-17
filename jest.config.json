@@ -1,0 +1,10 @@
+{
+  "roots": ["<rootDir>/src"],
+  "setupFilesAfterEnv": ["@testing-library/jest-dom"],
+  "testEnvironment": "jsdom",
+  "transform": {
+    "\\.(ts|tsx)$": "ts-jest",
+    "\\.css$": "jest-css-modules-transform"
+  },
+  "clearMocks": true
+}
