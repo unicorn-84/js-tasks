@@ -5,6 +5,6 @@ import App from './App';
 describe('<App />', () => {
   test('should render correctly', () => {
     render(<App />);
-    expect(screen.getByText('JavaScript tasks'));
+    expect(screen.getByText('JavaScript projects'));
   });
 });
