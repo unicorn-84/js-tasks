@@ -1,5 +1,7 @@
 import * as React from 'react';
 import './Hero.style.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export interface HeroProps {}
 
@@ -9,10 +11,14 @@ const Hero: React.FC<HeroProps> = () => {
       <div className="hero-body">
         <div className="container">
           <p className="title">JavaScript tasks</p>
-          <p className="subtitle">With TypeScript, React and XState</p>
-          <span className="icon">
-            <i className="fas fa-home"></i>
-          </span>
+          <p className="subtitle">
+            JavaScript projects with TypeScript, React and XState
+          </p>
+          <a href="https://github.com/unicorn-84/js-tasks">
+            <span className="icon">
+              <FontAwesomeIcon icon={faGithub} size="2x"></FontAwesomeIcon>
+            </span>
+          </a>
         </div>
       </div>
     </section>
