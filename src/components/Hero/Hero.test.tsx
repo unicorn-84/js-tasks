@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Hero from '.';
 
-describe('<App />', () => {
+describe('<Hero />', () => {
   test('should render correctly', () => {
-    render(<App />);
-    expect(screen.getByText('JavaScript tasks'));
+    render(<Hero />);
+    expect(screen.getByText('JavaScript tasks')).toBeVisible();
   });
 });
