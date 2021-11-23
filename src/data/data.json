@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Countdown",
+      "subtitle": "Countdown to New Year 2022",
+      "image": "https://via.placeholder.com/1280x960",
+      "code": "https://github.com/unicorn-84/js-tasks",
+      "demo": "https://js-tasks-project.web.app",
+      "statechart": "https://stately.ai/viz/f790cff8-3ad9-4b21-844e-00fb672181ab"
+    }
+  ]
+}
