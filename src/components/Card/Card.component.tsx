@@ -38,7 +38,7 @@ const Card: React.FC<CardProps> = ({
   return (
     <div className="card">
       <div className="card-image">
-        <figure className="image is-4by3">
+        <figure className="image is-16by9">
           <img src={img} alt={`${title} image`} />
         </figure>
       </div>
