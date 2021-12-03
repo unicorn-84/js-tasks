@@ -4,7 +4,7 @@ import LandingPage from '.';
 
 describe('<LandingPage />', () => {
   test('should render correctly', () => {
-    render(<LandingPage>Landing page</LandingPage>);
-    expect(screen.getByText('Landing page')).toBeVisible();
+    render(<LandingPage />);
+    expect(screen.getByText('Countdown')).toBeVisible();
   });
 });
