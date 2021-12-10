@@ -4,10 +4,10 @@
       "id": 1,
       "title": "Countdown",
       "subtitle": "Countdown to New Year 2022",
-      "image": "https://res.cloudinary.com/unicorn84/image/upload/c_scale,q_auto,w_1920/v1637697029/js-tasks/countdown/background.webp",
-      "code": "https://github.com/unicorn-84/js-tasks",
-      "demo": "https://js-tasks-project.web.app",
-      "statechart": "https://stately.ai/viz/f790cff8-3ad9-4b21-844e-00fb672181ab"
+      "imageLink": "https://res.cloudinary.com/unicorn84/image/upload/c_scale,q_auto,w_1920/v1637697029/js-tasks/countdown/background.webp",
+      "codeLink": "https://github.com/unicorn-84/js-tasks",
+      "demoLink": "https://js-tasks-project.web.app",
+      "stateChartLink": "https://stately.ai/viz/f790cff8-3ad9-4b21-844e-00fb672181ab"
     }
   ]
 }
