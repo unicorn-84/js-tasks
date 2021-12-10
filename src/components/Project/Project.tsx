@@ -1,45 +1,21 @@
 import * as React from 'react';
+import { TProject } from '../../types';
 
-export interface IProjectProps {
-  /**
-   * The image's src
-   */
-  img: string;
-  /**
-   * The card's title
-   */
-  title: string;
-  /**
-   * The card's subtitle
-   */
-  subtitle: string;
-  /**
-   * The demo link
-   */
-  demo: string;
-  /**
-   * The code link
-   */
-  code: string;
-  /**
-   * The statechart link
-   */
-  stateChart: string;
-}
+export interface IProjectProps extends TProject {}
 
 const Project: React.FC<IProjectProps> = ({
-  img,
   title,
   subtitle,
-  demo,
-  code,
-  stateChart,
+  codeLink,
+  demoLink,
+  imageLink,
+  stateChartLink,
 }) => {
   return (
     <div className="card">
       <div className="card-image">
         <figure className="image is-16by9">
-          <img src={img} alt={`${title} image`} />
+          <img src={imageLink} alt={`${title} image`} />
         </figure>
       </div>
       <div className="card-content">
@@ -50,19 +26,19 @@ const Project: React.FC<IProjectProps> = ({
       </div>
       <footer className="card-footer">
         <a
-          href={demo}
+          href={demoLink}
           className="card-footer-item has-text-info has-text-weight-medium"
         >
           Demo
         </a>
         <a
-          href={code}
+          href={codeLink}
           className="card-footer-item has-text-info has-text-weight-medium"
         >
           Code
         </a>
         <a
-          href={stateChart}
+          href={stateChartLink}
           className="card-footer-item has-text-info has-text-weight-medium"
         >
           Statechart

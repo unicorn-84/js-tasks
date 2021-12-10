@@ -6,10 +6,11 @@ describe('<Project />', () => {
   test('should render correctly', () => {
     render(
       <Project
-        code=""
-        demo=""
-        img=""
-        stateChart=""
+        id={1}
+        codeLink=""
+        demoLink=""
+        imageLink=""
+        stateChartLink=""
         title="Project"
         subtitle=""
       />
