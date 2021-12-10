@@ -9,7 +9,7 @@ const App: React.FC<IAppProps> = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/projects" element={<>Project</>} />
+        <Route path="/demo/countdown" element={<div>Countdown</div>} />
       </Routes>
     </BrowserRouter>
   );
