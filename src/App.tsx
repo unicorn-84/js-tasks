@@ -1,15 +1,15 @@
 import * as React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Hero, LandingPage } from './components';
+import { LandingPage } from './components';
 
-export interface AppProps extends React.HTMLAttributes<HTMLDivElement> {}
+export interface IAppProps extends React.HTMLAttributes<HTMLDivElement> {}
 
-const App: React.FC<AppProps> = () => {
+const App: React.FC<IAppProps> = () => {
   return (
     <BrowserRouter>
-      <Hero />
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/projects" element={<>Project</>} />
       </Routes>
     </BrowserRouter>
   );
