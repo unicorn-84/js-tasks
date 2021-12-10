@@ -1,2 +1,2 @@
-export { default } from './ProjectsOverview';
-export type { Projects } from './ProjectsOverview';
+export { default } from './ProjectsOverview.component';
+export type { IProjectsOverviewProps } from './ProjectsOverview.component';

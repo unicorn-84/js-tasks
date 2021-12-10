@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
-import ProjectsOverview, { Projects } from '.';
+import ProjectsOverview from '.';
+import { TProjects } from '../../types';
 
-const projects: Projects = [
+const projects: TProjects = [
   {
     id: 1,
     title: 'Countdown',
