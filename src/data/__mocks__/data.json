@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Project",
+      "subtitle": "",
+      "imageLink": "",
+      "codeLink": "",
+      "demoLink": "",
+      "stateChartLink": ""
+    }
+  ]
+}
