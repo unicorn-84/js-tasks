@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
-import ProjectPreview, { TProject } from '.';
+import ProjectPreview from '.';
+import { TProject } from '../../types';
 
 const project: TProject = {
   id: 1,
