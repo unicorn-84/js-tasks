@@ -1,10 +1,13 @@
 import * as React from 'react';
-import { ProjectPreview } from '..';
-import { projects } from '../../data/data.json';
+import { Project, ProjectPreview } from '..';
 
-export interface ProjectsPreviewProps {}
+export type Projects = Project[];
 
-const ProjectsPreview: React.FC<ProjectsPreviewProps> = () => {
+export interface ProjectsPreviewProps {
+  projects: Projects;
+}
+
+const ProjectsPreview: React.FC<ProjectsPreviewProps> = ({ projects }) => {
   return (
     <div className="columns is-mobile is-multiline">
       {projects.map((project) => {
