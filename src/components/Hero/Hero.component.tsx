@@ -1,11 +1,10 @@
 import * as React from 'react';
-import './Hero.style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-export interface HeroProps {}
+export interface IHeroProps {}
 
-const Hero: React.FC<HeroProps> = () => {
+const Hero: React.FC<IHeroProps> = () => {
   return (
     <section className="hero is-info">
       <div className="hero-body">
