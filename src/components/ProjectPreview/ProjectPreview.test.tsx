@@ -1,21 +1,13 @@
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
 import ProjectPreview from '.';
-import { TProject } from '../../types';
+import { projects } from '../../data/data.json';
 
-const project: TProject = {
-  id: 1,
-  title: 'Countdown',
-  subtitle: '',
-  demoLink: '',
-  codeLink: '',
-  stateChartLink: '',
-  imageLink: '',
-};
+jest.mock('../../data/data.json');
 
 describe('<ProjectPreview />', () => {
   test('should render correctly', () => {
-    render(<ProjectPreview project={project} />);
-    expect(screen.getByText('Countdown')).toBeVisible();
+    render(<ProjectPreview project={projects[0]} />);
+    expect(screen.getByText('Project')).toBeVisible();
   });
 });
