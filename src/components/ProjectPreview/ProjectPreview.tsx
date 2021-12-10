@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Card } from '..';
+import { Project } from '..';
 
-export type Project = {
+export type TProject = {
   id: number;
   title: string;
   subtitle: string;
@@ -12,14 +12,14 @@ export type Project = {
 };
 
 export interface ProjectPreviewProps {
-  project: Project;
+  project: TProject;
 }
 
 const ProjectPreview: React.FC<ProjectPreviewProps> = ({
   project: { title, subtitle, codeLink, demoLink, stateChartLink, imageLink },
 }) => {
   return (
-    <Card
+    <Project
       title={title}
       subtitle={subtitle}
       code={codeLink}

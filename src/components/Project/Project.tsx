@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export interface CardProps {
+export interface IProjectProps {
   /**
    * The image's src
    */
@@ -27,7 +27,7 @@ export interface CardProps {
   stateChart: string;
 }
 
-const Card: React.FC<CardProps> = ({
+const Project: React.FC<IProjectProps> = ({
   img,
   title,
   subtitle,
@@ -72,4 +72,4 @@ const Card: React.FC<CardProps> = ({
   );
 };
 
-export default Card;
+export default Project;

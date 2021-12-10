@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
-import ProjectPreview, { Project } from '.';
+import ProjectPreview, { TProject } from '.';
 
-const project: Project = {
+const project: TProject = {
   id: 1,
   title: 'Countdown',
   subtitle: '',

@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Project, ProjectPreview } from '..';
+import { TProject, ProjectPreview } from '..';
 
-export type Projects = Project[];
+export type Projects = TProject[];
 
 export interface ProjectsPreviewProps {
   projects: Projects;

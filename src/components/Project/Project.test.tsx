@@ -1,11 +1,18 @@
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
-import Card from '.';
+import Project from '.';
 
-describe('<Card />', () => {
+describe('<Project />', () => {
   test('should render correctly', () => {
     render(
-      <Card code="" demo="" img="" stateChart="" title="Project" subtitle="" />
+      <Project
+        code=""
+        demo=""
+        img=""
+        stateChart=""
+        title="Project"
+        subtitle=""
+      />
     );
     expect(screen.getByText('Project')).toBeVisible();
   });
