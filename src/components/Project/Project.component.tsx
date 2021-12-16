@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import { TProject } from '../../types';
 
 export interface IProjectProps extends TProject {}
@@ -7,7 +8,7 @@ const Project: React.FC<IProjectProps> = ({
   title,
   subtitle,
   codeLink,
-  demoLink,
+  name,
   imageLink,
   stateChartLink,
 }) => {
@@ -25,12 +26,12 @@ const Project: React.FC<IProjectProps> = ({
         </div>
       </div>
       <footer className="card-footer">
-        <a
-          href={demoLink}
+        <Link
+          to={`/demo/${name}`}
           className="card-footer-item has-text-info has-text-weight-medium"
         >
           Demo
-        </a>
+        </Link>
         <a
           href={codeLink}
           className="card-footer-item has-text-info has-text-weight-medium"

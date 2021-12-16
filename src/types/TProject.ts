@@ -16,9 +16,9 @@ export type TProject = {
    */
   codeLink: string;
   /**
-   * The URL to link for a demo
+   * The name of a project
    */
-  demoLink: string;
+  name: string;
   /**
    * The URL to link for a statechart
    */
