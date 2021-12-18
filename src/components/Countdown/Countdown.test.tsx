@@ -5,6 +5,6 @@ import Countdown from '.';
 describe('<Countdown />', () => {
   test('should render correctly', () => {
     render(<Countdown />);
-    expect(screen.getByText('Countdown')).toBeVisible();
+    expect(screen.getByText('Days')).toBeVisible();
   });
 });
