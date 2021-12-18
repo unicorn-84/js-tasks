@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import StyledCountdownPage from './CountdownPage.style';
 import { projects } from '../../../data/data.json';
 import { TProject } from '../../../types';
+import { Countdown } from '../..';
 
 const countdownData: TProject | undefined = projects.find(
   (item) => item.name === 'countdown'
@@ -41,8 +42,7 @@ const CountdownPage: React.FC<ICountdownPageProps> = () => {
 
       <div className="hero-body">
         <div className="container has-text-centered">
-          <p className="title">Title</p>
-          <p className="subtitle">Subtitle</p>
+          <Countdown />
         </div>
       </div>
     </StyledCountdownPage>
