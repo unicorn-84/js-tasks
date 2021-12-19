@@ -14,10 +14,12 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "@xstate/react": "^1.6.3",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-router-dom": "^6.0.2",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "xstate": "^4.26.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.0",

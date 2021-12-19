@@ -1,3 +1,4 @@
+import { useMachine } from '@xstate/react';
 import * as React from 'react';
 import {
   StyledBox,
@@ -5,27 +6,33 @@ import {
   StyledTime,
   StyledLevel,
 } from './Countdown.style';
+import { countdownMachine } from '.';
 
 export interface ICountdownProps {}
 
 const Countdown: React.FC<ICountdownProps> = () => {
+  const [
+    {
+      context: { seconds, minutes, hours, days },
+    },
+  ] = useMachine(countdownMachine);
   return (
     <StyledLevel>
       <StyledBox>
         <StyledTitle>Days</StyledTitle>
-        <StyledTime>365</StyledTime>
+        <StyledTime>{days}</StyledTime>
       </StyledBox>
       <StyledBox>
         <StyledTitle>Hours</StyledTitle>
-        <StyledTime>24</StyledTime>
+        <StyledTime>{hours}</StyledTime>
       </StyledBox>
       <StyledBox>
         <StyledTitle>Minutes</StyledTitle>
-        <StyledTime>59</StyledTime>
+        <StyledTime>{minutes}</StyledTime>
       </StyledBox>
       <StyledBox>
         <StyledTitle>Seconds</StyledTitle>
-        <StyledTime>59</StyledTime>
+        <StyledTime>{seconds}</StyledTime>
       </StyledBox>
     </StyledLevel>
   );
