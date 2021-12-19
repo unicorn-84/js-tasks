@@ -7,6 +7,7 @@ import {
   StyledLevel,
 } from './Countdown.style';
 import { countdownMachine } from '.';
+import { addLeadingZeroToPositiveNumber } from '../../utils';
 
 export interface ICountdownProps {}
 
@@ -20,19 +21,19 @@ const Countdown: React.FC<ICountdownProps> = () => {
     <StyledLevel>
       <StyledBox>
         <StyledTitle>Days</StyledTitle>
-        <StyledTime>{days}</StyledTime>
+        <StyledTime>{addLeadingZeroToPositiveNumber(days)}</StyledTime>
       </StyledBox>
       <StyledBox>
         <StyledTitle>Hours</StyledTitle>
-        <StyledTime>{hours}</StyledTime>
+        <StyledTime>{addLeadingZeroToPositiveNumber(hours)}</StyledTime>
       </StyledBox>
       <StyledBox>
         <StyledTitle>Minutes</StyledTitle>
-        <StyledTime>{minutes}</StyledTime>
+        <StyledTime>{addLeadingZeroToPositiveNumber(minutes)}</StyledTime>
       </StyledBox>
       <StyledBox>
         <StyledTitle>Seconds</StyledTitle>
-        <StyledTime>{seconds}</StyledTime>
+        <StyledTime>{addLeadingZeroToPositiveNumber(seconds)}</StyledTime>
       </StyledBox>
     </StyledLevel>
   );

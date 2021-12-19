@@ -54,8 +54,9 @@ export const StyledTitle = styled.div`
 `;
 
 export const StyledTime = styled.div`
-  font-size: calc(var(--size) * 2);
+  font-size: calc(var(--size) * 3);
   text-transform: uppercase;
   font-weight: 700;
   color: var(--timeColor);
+  line-height: 1;
 `;
