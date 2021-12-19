@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { ICountdownPageProps } from '.';
 import { devices } from '../../../utils';
 
-const StyledCountdownPage = styled.section<ICountdownPageProps>`
+export const StyledCountdownPage = styled.section<ICountdownPageProps>`
   background: transparent no-repeat;
   background-size: cover;
   background-image: url('https://res.cloudinary.com/unicorn84/image/upload/c_scale,q_auto,w_320/v1639940064/js-tasks/countdown/new-year.webp');
@@ -25,4 +25,16 @@ const StyledCountdownPage = styled.section<ICountdownPageProps>`
   }
 `;
 
-export default StyledCountdownPage;
+export const StyledNav = styled.nav`
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  max-width: 320px;
+  margin: auto;
+
+  @media ${devices.tablet} {
+    margin-right: 0;
+  }
+`;
