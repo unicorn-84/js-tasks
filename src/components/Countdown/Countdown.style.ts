@@ -59,5 +59,5 @@ export const StyledTime = styled.div`
   text-transform: uppercase;
   font-weight: 700;
   color: var(--timeColor);
-  line-height: 1;
+  line-height: 1.2;
 `;
