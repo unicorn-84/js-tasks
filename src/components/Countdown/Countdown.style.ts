@@ -3,8 +3,9 @@ import { devices } from '../../utils';
 
 export const StyledLevel = styled.nav`
   --size: 1rem;
-  --titleColor: rgb(141, 92, 17);
-  --timeColor: rgb(45, 24, 13);
+  --boxBgColor: rgba(255, 255, 255, 0.7);
+  --titleColor: rgba(10, 10, 10, 0.9);
+  --timeColor: rgba(10, 10, 10, 0.9);
 
   display: flex;
   flex-flow: column nowrap;
@@ -20,7 +21,7 @@ export const StyledLevel = styled.nav`
 
   @media ${devices.tablet} {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   @media ${devices.laptopL} {
@@ -31,8 +32,8 @@ export const StyledLevel = styled.nav`
 export const StyledBox = styled.div`
   width: calc(var(--size) * 6);
   height: calc(var(--size) * 6);
-  background-color: rgba(255, 254, 202, 0.7);
-  border-radius: calc(var(--size) / 3);
+  background-color: var(--boxBgColor);
+  border-radius: 4px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
