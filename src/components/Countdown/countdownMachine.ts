@@ -10,7 +10,7 @@ type TCountdownMachineContext = {
 
 const countdownMachine = createMachine<TCountdownMachineContext>(
   {
-    id: 'timerMachine',
+    id: 'countdownMachine',
     initial: 'running',
     context: {
       newYear: new Date(new Date().getFullYear() + 1, 0, 1).getTime(),
