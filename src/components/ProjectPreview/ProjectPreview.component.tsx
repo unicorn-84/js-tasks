@@ -7,7 +7,15 @@ export interface IProjectPreviewProps {
 }
 
 const ProjectPreview: React.FC<IProjectPreviewProps> = ({
-  project: { id, title, subtitle, name, codeLink, stateChartLink, imageLink },
+  project: {
+    id,
+    title,
+    subtitle,
+    name,
+    codeLink,
+    stateChartLink,
+    thumbnailLink,
+  },
 }) => {
   return (
     <Project
@@ -17,7 +25,7 @@ const ProjectPreview: React.FC<IProjectPreviewProps> = ({
       codeLink={codeLink}
       name={name}
       stateChartLink={stateChartLink}
-      imageLink={imageLink}
+      thumbnailLink={thumbnailLink}
     />
   );
 };

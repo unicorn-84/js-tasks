@@ -24,7 +24,7 @@ export type TProject = {
    */
   stateChartLink: string;
   /**
-   * The URL to link for an image
+   * The URL to link for a thumbnail
    */
-  imageLink: string;
+  thumbnailLink: string;
 };

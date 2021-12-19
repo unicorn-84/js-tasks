@@ -5,7 +5,7 @@
       "title": "Countdown",
       "subtitle": "Countdown to New Year 2022",
       "name": "countdown",
-      "imageLink": "https://res.cloudinary.com/unicorn84/image/upload/c_scale,q_auto,w_640/v1639947758/js-tasks/countdown/new-year-thumb.webp",
+      "thumbnailLink": "https://res.cloudinary.com/unicorn84/image/upload/c_scale,q_auto,w_640/v1639948522/js-tasks/countdown/new-year-thumbnail.webp",
       "codeLink": "https://github.com/unicorn-84/js-tasks/tree/master/src/components/Countdown",
       "stateChartLink": "https://stately.ai/viz/a0387a2b-34d9-43ac-89df-ba213a0b90ca"
     }

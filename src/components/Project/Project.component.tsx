@@ -9,14 +9,14 @@ const Project: React.FC<IProjectProps> = ({
   subtitle,
   codeLink,
   name,
-  imageLink,
+  thumbnailLink,
   stateChartLink,
 }) => {
   return (
     <div className="card">
       <div className="card-image">
         <figure className="image is-16by9">
-          <img src={imageLink} alt={`${title} image`} />
+          <img src={thumbnailLink} alt={`${title} thumbnail`} />
         </figure>
       </div>
       <div className="card-content">
